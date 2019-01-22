@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      var Number = [1, 9, 8, 43, 76, 5, 4, 32, 3, 99];
+      function TimKiem(Number, key) {
+        var i = 0;
+        for (i = 0; i < Number.length; i++) {
+          if (Number[i] == key) return i;
+        }
+        return -1;
+      }
+      document.getElementById("demo").innerHTML =
+        "Vi tri: " + TimKiem(Number, 0);
+    </script>
+  </body>
+</html>
